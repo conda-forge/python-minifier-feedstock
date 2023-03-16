@@ -1,5 +1,5 @@
 {% set name = "python-minifier" %}
-{% set version = "2.8.0" %}
+{% set version = "2.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_minifier-{{ version }}.tar.gz
-  sha256: 07d0e8ae63fc5db3b9d9363ee26b8b1f42ec905a4feb86e9acdac4acd5396fb7
+  sha256: a20e6c101c5b9eae943c52d2f175e3ce749b65870dcdac85904fc6f0720fc079
 
 build:
   number: 0
