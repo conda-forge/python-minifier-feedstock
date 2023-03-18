@@ -1,11 +1,11 @@
-About python-minifier
-=====================
+About python-minifier-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-minifier-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dflook/python-minifier
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-minifier-feedstock/blob/main/LICENSE.txt)
 
 Summary: Transform Python source code into it's most compact representation
 
