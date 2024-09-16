@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.3,<3.12
+    - setuptools
   run:
     - python >=3.3,<3.12
 
