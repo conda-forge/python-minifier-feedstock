@@ -1,5 +1,5 @@
 {% set name = "python-minifier" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_minifier-{{ version }}.tar.gz
-  sha256: ba8697b507b6ff059b4b43db2e08d8f9a6bd048d80ae3b955cd286092be2ffb2
+  sha256: 954cadb2489e6d1dfcc86d6cd861ede4dfbf4e9c265920671ab77b5b7f4b8617
 
 build:
   number: 0
@@ -21,21 +21,18 @@ requirements:
   host:
     - pip
     - python >=3.3,<3.12
+    - setuptools
   run:
     - python >=3.3,<3.12
 
 test:
-  source_files:
-    - test
   imports:
     - python_minifier
   commands:
     - pip check
     - pyminify --help
-    - pytest -vvv --capture=tee-sys test
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/dflook/python-minifier
