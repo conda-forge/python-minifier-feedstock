@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_minifier-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python_minifier-{{ version }}.tar.gz
   sha256: 489133b91212ec9658a7b64d243eb9eb67d7e53faf2ac5166a33301c61b3dcab
 
 build:
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,<3.14
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.7,<3.14
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -33,6 +33,7 @@ test:
     - pyminify --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/dflook/python-minifier
