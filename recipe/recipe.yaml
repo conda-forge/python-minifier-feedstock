@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: python-minifier
-  version: 3.0.0
+  version: "3.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/python_minifier-${{ version }}.tar.gz
-  sha256: 5d892a20a8c56a34176fa8bfff007afc2aa4999abc81fa1c3507fb0b1a9790da
+  sha256: 85bccf99b7756a521d6aa3bf5f00950e27ec9480ea62d66ed955bdb8eec24c14
 
 build:
   number: 0
